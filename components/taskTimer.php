@@ -3,7 +3,7 @@ include "../partials/_dbconnect.php";
 session_start();
 include "header.php";
 if (!isset($_GET['Sno'])) {
-    $_SESSION['error'] = 'Please try again';
+    $_SESSION['error'] = ' Please try again';
     header("location: ../index.php");
 } else {
     $Sno = $_GET['Sno'];
